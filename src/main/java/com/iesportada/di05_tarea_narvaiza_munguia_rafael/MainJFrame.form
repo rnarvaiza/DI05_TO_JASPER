@@ -24,18 +24,26 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
-              <Component id="buttonGenerateIreport1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="130" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="buttonGenerateIreport1" pref="136" max="32767" attributes="0"/>
+                  <Component id="generateHTMLButton" max="32767" attributes="0"/>
+                  <Component id="pdfGenerateButton" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace pref="125" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
               <Component id="buttonGenerateIreport1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="195" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="pdfGenerateButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="generateHTMLButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="103" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -43,10 +51,29 @@
   <SubComponents>
     <Component class="java.awt.Button" name="buttonGenerateIreport1">
       <Properties>
-        <Property name="label" type="java.lang.String" value="Generar reporte 1"/>
+        <Property name="actionCommand" type="java.lang.String" value="vistaDeInforme"/>
+        <Property name="label" type="java.lang.String" value="Vista de informe"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonGenerateIreport1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="pdfGenerateButton">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="PDFButton"/>
+        <Property name="label" type="java.lang.String" value="Generar PDF"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pdfGenerateButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="generateHTMLButton">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="HTMLGenerate"/>
+        <Property name="label" type="java.lang.String" value="Generar HTML"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="generateHTMLButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

@@ -34,25 +34,22 @@
 	</pageHeader>
 	<columnHeader>
 		<band height="61" splitType="Stretch">
-			<line>
-				<reportElement x="0" y="44" width="555" height="1" uuid="89f978e7-904d-40f0-b0a1-7380b697fb76"/>
-			</line>
 			<staticText>
-				<reportElement x="49" y="2" width="112" height="35" uuid="c8ef4a78-1c4e-4266-8c06-7518e553153a"/>
+				<reportElement x="46" y="26" width="112" height="35" uuid="c8ef4a78-1c4e-4266-8c06-7518e553153a"/>
 				<textElement>
 					<font size="16" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[País	]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="161" y="2" width="103" height="35" uuid="e3bab9b3-3eb6-4440-8a1d-59ced3fc760f"/>
+				<reportElement x="158" y="26" width="103" height="35" uuid="e3bab9b3-3eb6-4440-8a1d-59ced3fc760f"/>
 				<textElement>
 					<font size="16" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Salario]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="264" y="2" width="98" height="35" uuid="918b06a4-605e-4fb7-82d3-b3ccf95bf4f5"/>
+				<reportElement x="261" y="26" width="98" height="35" uuid="918b06a4-605e-4fb7-82d3-b3ccf95bf4f5"/>
 				<textElement>
 					<font size="16" isBold="true" isItalic="true"/>
 				</textElement>
@@ -62,20 +59,23 @@
 	</columnHeader>
 	<detail>
 		<band height="125" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="124" width="555" height="1" uuid="cd394858-4983-4f7e-ae93-d6bc34b6c4e5"/>
+			</line>
 			<textField>
-				<reportElement x="49" y="9" width="112" height="20" uuid="984221e6-bb98-4250-bcc7-c7f48ba63a59"/>
+				<reportElement x="46" y="54" width="112" height="20" uuid="984221e6-bb98-4250-bcc7-c7f48ba63a59"/>
 				<textFieldExpression><![CDATA[$F{PAIS}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="161" y="9" width="100" height="20" uuid="0501d168-74a8-468d-a7ed-f6381947195e"/>
+				<reportElement x="158" y="54" width="100" height="20" uuid="0501d168-74a8-468d-a7ed-f6381947195e"/>
 				<textFieldExpression><![CDATA[$F{SALARIO}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="264" y="9" width="100" height="20" uuid="656224a5-040e-49bc-843b-0ac76da445cc"/>
+				<reportElement x="261" y="54" width="100" height="20" uuid="656224a5-040e-49bc-843b-0ac76da445cc"/>
 				<textFieldExpression><![CDATA[$F{MONEDA}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="2" y="49" width="555" height="1" uuid="cd394858-4983-4f7e-ae93-d6bc34b6c4e5"/>
+				<reportElement x="2" y="0" width="555" height="1" uuid="89f978e7-904d-40f0-b0a1-7380b697fb76"/>
 			</line>
 		</band>
 	</detail>
